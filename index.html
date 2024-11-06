@@ -199,6 +199,44 @@ h1 {
     color: #ffcccb; /* Light pastel pink */
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
+
+        
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .photo {
+        width: 200px; /* Resize images on medium screens */
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .photo {
+        width: 150px; /* Resize images on smaller screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-container {
+        top: 40%; /* Adjust position of container on smaller screens */
+    }
+
+    .photo {
+        width: 120px; /* Further reduce image size */
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-container {
+        top: 50%; /* Adjust position of container on very small screens */
+    }
+
+    .photo {
+        width: 100px; /* Smallest image size on very small screens */
+        height: 100px;
+    }
+}
     </style>
 </head>
 <body>
